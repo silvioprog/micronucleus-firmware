@@ -41,20 +41,20 @@ If not otherwise noted, the OSCCAL value is calibrated (+/- 1%) after boot for a
 | t85_default | 6650 | 1528 | - |
 | t85_entry_on_powerOn | 6586 | 1570 | [ENTRY_POWER_ON](#entry_power_on-entry-condition), LED_MODE=ACTIVE_HIGH |
 | t85_entry_on_powerOn_<br/>fastExit | 6586 | 1578 | [ENTRY_POWER_ON](#entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
-| **t85_entry_on_powerOn<br/>_activePullup_fastExit**<br/>[recommended configuration](#recommended-configuration) | 6586 | 1582 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
+| **t85_entry_on_powerOn_<br/>activePullup_fastExit**<br/>[recommended configuration](#recommended-configuration) | 6586 | 1582 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
 | t85_entry_on_powerOn_<br/>activePullup_fastExit_noLED| 6586 | 1564 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit) |
-| t85_entry_on_powerOn<br/>_pullupAt0 | 6586 | 1558 | [ENTRY_POWER_ON](#entry_power_on-entry-condition), USB_CFG_PULLUP_IOPORTNAME + USB_CFG_PULLUP_BIT |
+| t85_entry_on_powerOn_<br/>pullupAt0 | 6586 | 1558 | [ENTRY_POWER_ON](#entry_power_on-entry-condition), USB_CFG_PULLUP_IOPORTNAME + USB_CFG_PULLUP_BIT |
 | t85_fastExit | 6586 | 1554 | [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
-| t85_entry_on_reset<br/>_activePullup | 6586 | 1582 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_EXT_RESET](#entry_d_minus_pullup_activated_and_entry_ext_reset-entry-condition), LED_MODE=ACTIVE_HIGH |
+| t85_entry_on_reset_<br/>activePullup | 6586 | 1582 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_EXT_RESET](#entry_d_minus_pullup_activated_and_entry_ext_reset-entry-condition), LED_MODE=ACTIVE_HIGH |
 | t85_entry_on_reset_<br/>activePullup_fastExit | 6586 | 1582 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_EXT_RESET](#entry_d_minus_pullup_activated_and_entry_ext_reset-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit),<br/>AUTO_EXIT_MS=15000 Bootloader timeout increased to 15 seconds (if connected to USB),<br/>LED_MODE=ACTIVE_HIGH. |
 |  |  |  |  |
 | t88_default | 6714 | 1442 | LED_MODE=ACTIVE_HIGH |
-| **t88_entry_on_powerOn<br/>_activePullup_fastExit**<br/>[recommended configuration](#recommended-configuration) | 6650 | 1478 |  [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
+| **t88_entry_on_powerOn_<br/>activePullup_fastExit**<br/>[recommended configuration](#recommended-configuration) | 6650 | 1478 |  [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
 |  |  |  |  |
 | t167_default | 14970 | 1322 | - |
-| t167_entry_on_powerOn<br/>_no_pullup | 14842 | 1366 | [ENTRY_POWER_ON](#entry_power_on-entry-condition), [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), LED_MODE=ACTIVE_HIGH |
-| **t167_entry_on_powerOn<br/>_activePullup_fastExit**<br/>[recommended configuration](#recommended-configuration) | 14842 | 1378 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
-| t167_entry_on_reset<br/>_activePullup_fastExit | 14842 | 1378 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_EXT_RESET](#entry_d_minus_pullup_activated_and_entry_ext_reset-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), <br/>AUTO_EXIT_MS=15000 Bootloader timeout increased to 15 seconds (if connected to USB),<br/>LED_MODE=ACTIVE_HIGH. |
+| t167_entry_on_powerOn_<br/>no_pullup | 14842 | 1366 | [ENTRY_POWER_ON](#entry_power_on-entry-condition), [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), LED_MODE=ACTIVE_HIGH |
+| **t167_entry_on_powerOn_<br/>activePullup_fastExit**<br/>[recommended configuration](#recommended-configuration) | 14842 | 1378 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_POWER_ON](#entry_d_minus_pullup_activated_and_entry_power_on-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), LED_MODE=ACTIVE_HIGH |
+| t167_entry_on_reset_<br/>activePullup_fastExit | 14842 | 1378 | [ENTRY_D_MINUS_PULLUP_ACTIVATED_AND_ENTRY_EXT_RESET](#entry_d_minus_pullup_activated_and_entry_ext_reset-entry-condition), [FAST_EXIT_NO_USB_MS=300](#fast_exit_no_usb_ms-for-fast-bootloader-exit), <br/>AUTO_EXIT_MS=15000 Bootloader timeout increased to 15 seconds (if connected to USB),<br/>LED_MODE=ACTIVE_HIGH. |
 |  |  |  |  |
 | Nanite841 |  | 1566 |  |
 | BitBoss |  | 1560 |  |
@@ -219,6 +219,7 @@ This results in an average current consumption of **9 µA** (2.5 years with a 200
 This long startup time can be dramatically reduced to 6 clock cycles by [changing fuses to use the internal 8Mhz clock](https://github.com/ArminJo/micronucleus-firmware/blob/master/utils/Write%2085%20Fuses%20E2%20DF%20FF%20-%20ISP%20Mode%20%3D%208MHz%20without%20BOD%20and%20Pin5.cmd), but this **disables the possibility to program the Digispark board via USB** and enables availability of whole memory for your program.
 
 # Reducing current of digispark bords for low power applications
+Here is an [Instructable](https://www.instructables.com/Reducing-Battery-Power-Consumption-for-Digispark-A/) covering the topic.
 ### Disabling the power LED
 Break the copper wire that connects the power LED to the diode with a knife or remove / disable the 102 resistor.
 ### Removing the VIN voltage regulator
